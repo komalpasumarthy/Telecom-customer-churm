@@ -2,6 +2,7 @@
 
 ## Tasks Performed:
 
+
 Data Collection and preprocessing:
 - Importing Libraries and Loading Data
   - The required libraries were imported, and the dataset was loaded from the Kaggle source into a pandas Data Frame.
@@ -75,7 +76,7 @@ Model Building and Evaluation:
   - Confusion Matrix: A confusion matrix was created for the trained model to evaluate its performance.
   - Metrics Calculation: Key metrics were calculated, including sensitivity, specificity, false positive rate, positive predictive value, and negative predictive value.
 
-Results:
+
 - **Results:**
   | Metric                                      | Logistic Regression | Decision Tree Model |
   |---------------------------------------------|---------------------|---------------------|
