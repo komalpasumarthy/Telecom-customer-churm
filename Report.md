@@ -4,9 +4,9 @@
 
 
 ### Data Collection and preprocessing:
-- Importing Libraries and Loading Data
+- #### Importing Libraries and Loading Data
   - The required libraries were imported, and the dataset was loaded from the Kaggle source into a pandas Data Frame.
-- Data Understanding and Null Value Check
+- #### Data Understanding and Null Value Check
   - Upon examining the dataset, it was found that there were no null values, allowing us to proceed to the next step.
 - Binary Encoding
   - Identified features with only two possible values and replaced them with binary values (1 for "Yes" and 0 for "No").
