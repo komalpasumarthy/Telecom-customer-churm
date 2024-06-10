@@ -15,7 +15,7 @@
 - Outlier Detection and Distribution Check
   - All numerical variables were checked for outliers. As there were no outliers and the data was uniformly distributed, proceeded to Exploratory Data Analysis
 
-###Exploratory Data Analysis (EDA):
+### Exploratory Data Analysis (EDA):
 - Univariate Analysis
   - Distribution of Numerical Features
     - Analyzed the distribution of numerical features across the dataset. Key observations include:
@@ -54,10 +54,10 @@
       - Low Total Charges and High Monthly Charges: Customers with low total charges but high monthly charges tend to churn as well.
       - These patterns suggest that customers who are new and either have high monthly costs or have low total charges are at a higher risk of churning.
 
-###Feature Engineering:
+### Feature Engineering:
 - Identified all the categorical variables and creating their dummy Features which are helpful in Churn Prediction
 
-###Model Building and Evaluation:
+### Model Building and Evaluation:
 - Model Selection
   - Based on a review of various research papers, logistic regression and decision tree algorithms were chosen due to their relative performance advantages for the given dataset.
 - Logistic Regression Model with Hyperparameter Tuning and GridSearch
@@ -85,11 +85,11 @@
   | Sensitivity                                 | 57.04%              | 54.46%              |
   | Specificity                                 | 88.54%              | 84.55%              |
 
-###Challenges Faced
+### Challenges Faced
 - Overfitting in Decision Tree: The model performed well on training data but poorly on test data, indicating overfitting. Iterative tuning did not resolve this issue.
 - Logistic Regression Accuracy: Hyperparameter tuning had no significant impact on accuracy, which plateaued at 80.9%, below industry standards.
 - Low Overall Accuracy: The highest achieved accuracy of 80.9% is insufficient compared to industry benchmarks.
-###Conclusion:
+### Conclusion:
 - Sensitivity and specificity are critical metrics for evaluating model performance, particularly when dealing with imbalanced datasets. These metrics help measure the goodness of a model by assessing its ability to correctly identify positive and negative cases.
 - The suitability of a model does not solely depend on high specificity or sensitivity. Instead, it should align with business requirements, which dictate the trade-off between these metrics. Depending on the specific business context, model parameters can be adjusted and the model retrained to meet desired performance standards.
 - In this project, both logistic regression and decision tree models were trained and evaluated. The outcomes
