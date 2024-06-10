@@ -77,10 +77,13 @@ Model Building and Evaluation:
 
 Results:
 - Logistic Regression with Hyperparameter Tuning	Decision Tree Model
-  - Train Accuracy	80.86%	77.69%
-  - Test accuracy	79.85%	76.25%
-  - Sensitivity	57.04%	54.46%
-  - Specificity	88.54%	84.55%
+| Metric                | Logistic Regression | Decision Tree Model |
+|-----------------------|---------------------|---------------------|
+| Train Accuracy        | 80.86%              | 77.69%              |
+| Test accuracy         | 79.85%              | 76.25%              |
+| Sensitivity           | 57.04%              | 54.46%              |
+| Specificity           | 88.54%              | 84.55%              |
+
 
 Challenges Faced
 - Overfitting in Decision Tree: The model performed well on training data but poorly on test data, indicating overfitting. Iterative tuning did not resolve this issue.
