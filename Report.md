@@ -92,4 +92,7 @@
 ### Conclusion:
 - Sensitivity and specificity are critical metrics for evaluating model performance, particularly when dealing with imbalanced datasets. These metrics help measure the goodness of a model by assessing its ability to correctly identify positive and negative cases.
 - The suitability of a model does not solely depend on high specificity or sensitivity. Instead, it should align with business requirements, which dictate the trade-off between these metrics. Depending on the specific business context, model parameters can be adjusted and the model retrained to meet desired performance standards.
-- In this project, both logistic regression and decision tree models were trained and evaluated. The outcomes
+- In this project, both logistic regression and decision tree models were trained and evaluated. The outcomes were as follows:
+  - Logistic Regression: Achieved a maximum specificity of 88.54%. Hyperparameter tuning further improved the model's performance, enhancing its specificity.
+  - Decision Tree: Achieved a maximum specificity of 84.55%. However, fine-tuning the decision tree model resulted in overfitting, which diminished its generalization capability.
+These results highlight that while logistic regression benefits from hyperparameter tuning, decision trees may require careful management to avoid overfitting. Ultimately, the choice of model and the trade-off between sensitivity and specificity should be guided by business objectives and requirements.
