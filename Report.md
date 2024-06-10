@@ -8,15 +8,15 @@
   - The required libraries were imported, and the dataset was loaded from the Kaggle source into a pandas Data Frame.
 - #### Data Understanding and Null Value Check
   - Upon examining the dataset, it was found that there were no null values, allowing us to proceed to the next step.
-- Binary Encoding
+- #### Binary Encoding
   - Identified features with only two possible values and replaced them with binary values (1 for "Yes" and 0 for "No").
-- Data Type Conversion
+- #### Data Type Conversion
   - The Total charges feature was converted to a float to ensure accurate numerical operations.
-- Outlier Detection and Distribution Check
+- #### Outlier Detection and Distribution Check
   - All numerical variables were checked for outliers. As there were no outliers and the data was uniformly distributed, proceeded to Exploratory Data Analysis
 
 ### Exploratory Data Analysis (EDA):
-- Univariate Analysis
+- #### Univariate Analysis
   - Distribution of Numerical Features
     - Analyzed the distribution of numerical features across the dataset. Key observations include:
       - Many customers had low tenure, low monthly charges, and low total charges, as revealed by histograms.
@@ -37,13 +37,13 @@
       - 57.3% of churned customers pay via electronic check.
       - 74.9% of churned customers opt for paperless billing.
     - The above were identified by pie chart plotted among all categorical Features.
-- Bivariate Analysis
+- #### Bivariate Analysis
   - Plotted Boxplot between monthly Charges and other categorical variables The box plots were used to visualize the relationship between monthly charges and various categorical variables. Some key findings from this analysis include:
     - Senior Citizens: Senior citizens have a monthly spending range of approximately 70-95, whereas other customers have a spending range of 25-50.
     - Phone Service: Customers who do not use phone service have a monthly spending range of around 35-50, while those who use phone service spend between 40-85 monthly.
     - Streaming Services: Customers who opt for streaming TV and streaming movies tend to have higher monthly spending compared to those who do not use these services.
     - Paperless Billing: Customers who opt for paperless billing generally have higher monthly spending compared with those who do not.
-- Multivariate Analysis
+- #### Multivariate Analysis
   - Correlation Matrix
     - A correlation matrix was plotted to understand the relationships between numerical features. Key outcomes include:
       - Total Charges and Tenure: These features are positively correlated with a correlation coefficient of 0.83, indicating that customers with longer tenures tend to have higher total charges.
@@ -58,9 +58,9 @@
 - Identified all the categorical variables and creating their dummy Features which are helpful in Churn Prediction
 
 ### Model Building and Evaluation:
-- Model Selection
+- #### Model Selection
   - Based on a review of various research papers, logistic regression and decision tree algorithms were chosen due to their relative performance advantages for the given dataset.
-- Logistic Regression Model with Hyperparameter Tuning and GridSearch
+- #### Logistic Regression Model with Hyperparameter Tuning and GridSearch
   - Data Splitting: The dataset was split into training and test sets.
   - Data Scaling: Features were scaled to standardize the data.
   - Feature Selection: Highly correlated features were identified and removed using a correlation matrix to avoid multicollinearity.
@@ -68,7 +68,7 @@
   - Confusion Matrix: A confusion matrix was created for the trained model to evaluate its performance.
   - Metrics Calculation: Key metrics were calculated, including sensitivity, specificity, false positive rate, positive predictive value, and negative predictive value.
   - ROC Curve: The Receiver Operating Characteristic (ROC) curve was drawn to visualize the model's performance.
-- Decision Tree Model
+- #### Decision Tree Model
   - Data Splitting: The dataset was split into training and test sets.
   - Data Scaling: Features were scaled to standardize the data.
   - Model Training: The decision tree model was trained.
